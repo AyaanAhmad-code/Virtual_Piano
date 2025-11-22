@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+
+  h1 {
+    text-align: center;
+    font-size: 6vw;
+    padding: 30px;
+    font-weight: 600;
+    font-family: monospace;
+  }
+
+  @mixin keys() {
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    display: flex;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+    color: white;
+  }
+
+  .keys-group {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .key {
+      display: flex;
+      font-size: 2vw;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      align-items: flex-end;
+      justify-content: center;
+      height: 400px;
+      width: 80px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border: 1px solid black;
+      background-color: white;
+      float: left; /* or use flexbox/grid for layout */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+    }
+    .key:active,
+    .key.active {
+      transform: translateY(3px);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+    .key-black1 {
+      @include keys();
+      left: 52px;
+      top: 0;
+    }
+    .key-black2 {
+      @include keys();
+      left: 205px;
+      top: 0;
+    }
+    .key-black3 {
+      @include keys();
+      left: 359px;
+      top: 0;
+    }
+    .key-black4 {
+      @include keys();
+      left: 515px;
+      top: 0;
+    }
+    .key-black5 {
+      @include keys();
+      left: 667px;
+      top: 0;
+    }
+    .key-black6 {
+      @include keys();
+      left: 820px;
+      top: 0;
+    }
+    .key-black7 {
+      @include keys();
+      left: 972px;
+      top: 0;
+    }
+    .key-black8 {
+      @include keys();
+      left: 1127px;
+      top: 0;
+    }
+    .key-black9 {
+      @include keys();
+      left: 1280px;
+      top: 0;
+    }
+    .key-black10 {
+      @include keys();
+      left: 1432px;
+      top: 0;
+    }
+    .key-black1:active,
+    .key-black1.active,
+    .key-black2:active,
+    .key-black2.active,
+    .key-black3:active,
+    .key-black3.active,
+    .key-black4:active,
+    .key-black4.active,
+    .key-black5:active,
+    .key-black5.active,
+    .key-black6:active,
+    .key-black6.active,
+    .key-black7:active,
+    .key-black7.active,
+    .key-black8:active,
+    .key-black8.active,
+    .key-black9:active,
+    .key-black9.active,
+    .key-black10:active,
+    .key-black10.active {
+      scale: 0.95;
+      top: -5px;
+    }
+  }
+}
