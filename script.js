@@ -50,14 +50,14 @@ function activeKey(elem){
 
 document.querySelectorAll(".key, .key-black").forEach(k => {
     k.addEventListener('click', function(){
-        playSound(k.textContent.trim().toLowerCase());
+        playSound(k.textContent);
     });
 });
 
 document.addEventListener('keydown', (e)=>{
-    const key = e.key.toLowerCase();
+    const key = e.key;
 
-    const elem = [...document.querySelectorAll('.key, .key-black')].find(x => x.textContent.trim().toLowerCase() === key);
+    const elem = [...document.querySelectorAll('.key, .key-black')].find(x => x.textContent === key);
 
     if(elem){
         playSound(key);
