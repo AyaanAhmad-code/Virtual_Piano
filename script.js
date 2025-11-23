@@ -36,7 +36,7 @@ function playSound(key){
     else if(key === "7") file ="60.mp3";
     else if(key === "8") file ="61.mp3";
     else if(key === "9") file ="62.mp3";
-    else if(key === "10") file ="63.mp3";
+    else if(key === "0") file ="63.mp3";
 
     if(!file) return;
 

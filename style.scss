@@ -23,8 +23,8 @@ main {
 
   @mixin keys() {
     position: absolute;
-    height: 200px;
-    width: 50px;
+    height: 25vh;
+    width: 3vw;
     display: flex;
     font-size: 2vw;
     text-transform: uppercase;
@@ -39,7 +39,7 @@ main {
 
   .keys-group {
     margin-top: 50px;
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,8 +51,8 @@ main {
       font-family: Arial, Helvetica, sans-serif;
       align-items: flex-end;
       justify-content: center;
-      height: 400px;
-      width: 80px;
+      height: 60vh;
+      width: 5vw;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       border: 1px solid black;
@@ -73,47 +73,77 @@ main {
     }
     .key-black2 {
       @include keys();
-      left: 205px;
+      left: 130px;
       top: 0;
     }
     .key-black3 {
       @include keys();
-      left: 359px;
+      left: 285px;
       top: 0;
     }
     .key-black4 {
       @include keys();
-      left: 515px;
+      left: 360px;
       top: 0;
     }
     .key-black5 {
       @include keys();
-      left: 667px;
+      left: 515px;
       top: 0;
     }
     .key-black6 {
       @include keys();
-      left: 820px;
+      left: 593px;
       top: 0;
     }
     .key-black7 {
       @include keys();
-      left: 972px;
+      left: 745px;
       top: 0;
     }
     .key-black8 {
       @include keys();
-      left: 1127px;
+      left: 823px;
       top: 0;
     }
     .key-black9 {
       @include keys();
-      left: 1280px;
+      left: 977px;
       top: 0;
     }
     .key-black10 {
       @include keys();
-      left: 1432px;
+      left: 1052px;
+      top: 0;
+    }
+    .key-black11 {
+      @include keys();
+      left: 1207px;
+      top: 0;
+    }
+    .key-black12 {
+      @include keys();
+      left: 1283px;
+      top: 0;
+    }
+    .key-black13 {
+      @include keys();
+      left: 1360px;
+      top: 0;
+    }
+    .key-black14 {
+      @include keys();
+      left: 1487px;
+      top: 0;
+    }
+    .key-black15 {
+      @include keys();
+      left: 1052px;
+      top: 0;
+    }
+    .key-black16 {
+      @include keys();
+      left: 1052px;
       top: 0;
     }
     .key-black1:active,
@@ -135,7 +165,19 @@ main {
     .key-black9:active,
     .key-black9.active,
     .key-black10:active,
-    .key-black10.active {
+    .key-black10.active,
+    .key-black11:active,
+    .key-black11.active,
+    .key-black12:active,
+    .key-black12.active,
+    .key-black13:active,
+    .key-black13.active,
+    .key-black14:active,
+    .key-black14.active,
+    .key-black15:active,
+    .key-black15.active,
+    .key-black16:active,
+    .key-black16.active {
       scale: 0.95;
       top: -5px;
     }

@@ -24,7 +24,7 @@ main h1 {
 }
 main .keys-group {
   margin-top: 50px;
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,8 +36,8 @@ main .keys-group .key {
   font-family: Arial, Helvetica, sans-serif;
   align-items: flex-end;
   justify-content: center;
-  height: 400px;
-  width: 80px;
+  height: 60vh;
+  width: 5vw;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid black;
@@ -53,8 +53,8 @@ main .keys-group .key.active {
 }
 main .keys-group .key-black1 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -70,8 +70,8 @@ main .keys-group .key-black1 {
 }
 main .keys-group .key-black2 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -82,13 +82,13 @@ main .keys-group .key-black2 {
   border-bottom-right-radius: 10px;
   background-color: black;
   color: white;
-  left: 205px;
+  left: 130px;
   top: 0;
 }
 main .keys-group .key-black3 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -99,13 +99,30 @@ main .keys-group .key-black3 {
   border-bottom-right-radius: 10px;
   background-color: black;
   color: white;
-  left: 359px;
+  left: 285px;
   top: 0;
 }
 main .keys-group .key-black4 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
+  display: flex;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  left: 360px;
+  top: 0;
+}
+main .keys-group .key-black5 {
+  position: absolute;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -119,27 +136,10 @@ main .keys-group .key-black4 {
   left: 515px;
   top: 0;
 }
-main .keys-group .key-black5 {
-  position: absolute;
-  height: 200px;
-  width: 50px;
-  display: flex;
-  font-size: 2vw;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  align-items: flex-end;
-  justify-content: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: black;
-  color: white;
-  left: 667px;
-  top: 0;
-}
 main .keys-group .key-black6 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -150,13 +150,13 @@ main .keys-group .key-black6 {
   border-bottom-right-radius: 10px;
   background-color: black;
   color: white;
-  left: 820px;
+  left: 593px;
   top: 0;
 }
 main .keys-group .key-black7 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -167,13 +167,13 @@ main .keys-group .key-black7 {
   border-bottom-right-radius: 10px;
   background-color: black;
   color: white;
-  left: 972px;
+  left: 745px;
   top: 0;
 }
 main .keys-group .key-black8 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -184,13 +184,13 @@ main .keys-group .key-black8 {
   border-bottom-right-radius: 10px;
   background-color: black;
   color: white;
-  left: 1127px;
+  left: 823px;
   top: 0;
 }
 main .keys-group .key-black9 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -201,13 +201,13 @@ main .keys-group .key-black9 {
   border-bottom-right-radius: 10px;
   background-color: black;
   color: white;
-  left: 1280px;
+  left: 977px;
   top: 0;
 }
 main .keys-group .key-black10 {
   position: absolute;
-  height: 200px;
-  width: 50px;
+  height: 25vh;
+  width: 3vw;
   display: flex;
   font-size: 2vw;
   text-transform: uppercase;
@@ -218,7 +218,109 @@ main .keys-group .key-black10 {
   border-bottom-right-radius: 10px;
   background-color: black;
   color: white;
-  left: 1432px;
+  left: 1052px;
+  top: 0;
+}
+main .keys-group .key-black11 {
+  position: absolute;
+  height: 25vh;
+  width: 3vw;
+  display: flex;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  left: 1207px;
+  top: 0;
+}
+main .keys-group .key-black12 {
+  position: absolute;
+  height: 25vh;
+  width: 3vw;
+  display: flex;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  left: 1283px;
+  top: 0;
+}
+main .keys-group .key-black13 {
+  position: absolute;
+  height: 25vh;
+  width: 3vw;
+  display: flex;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  left: 1360px;
+  top: 0;
+}
+main .keys-group .key-black14 {
+  position: absolute;
+  height: 25vh;
+  width: 3vw;
+  display: flex;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  left: 1487px;
+  top: 0;
+}
+main .keys-group .key-black15 {
+  position: absolute;
+  height: 25vh;
+  width: 3vw;
+  display: flex;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  left: 1052px;
+  top: 0;
+}
+main .keys-group .key-black16 {
+  position: absolute;
+  height: 25vh;
+  width: 3vw;
+  display: flex;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: black;
+  color: white;
+  left: 1052px;
   top: 0;
 }
 main .keys-group .key-black1:active,
@@ -240,7 +342,19 @@ main .keys-group .key-black8.active,
 main .keys-group .key-black9:active,
 main .keys-group .key-black9.active,
 main .keys-group .key-black10:active,
-main .keys-group .key-black10.active {
+main .keys-group .key-black10.active,
+main .keys-group .key-black11:active,
+main .keys-group .key-black11.active,
+main .keys-group .key-black12:active,
+main .keys-group .key-black12.active,
+main .keys-group .key-black13:active,
+main .keys-group .key-black13.active,
+main .keys-group .key-black14:active,
+main .keys-group .key-black14.active,
+main .keys-group .key-black15:active,
+main .keys-group .key-black15.active,
+main .keys-group .key-black16:active,
+main .keys-group .key-black16.active {
   scale: 0.95;
   top: -5px;
 }/*# sourceMappingURL=style.css.map */
